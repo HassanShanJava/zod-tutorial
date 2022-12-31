@@ -4,8 +4,12 @@ import { expect, it } from "vitest";
 import { z } from "zod";
 //       ^ 🕵️‍♂️
 
+
+const number=z.number()
+
 export const toString = (num: unknown) => {
-  return String(num);
+  const resuilt=number.parse(num)
+  return String(resuilt)
 };
 
 // TESTS
